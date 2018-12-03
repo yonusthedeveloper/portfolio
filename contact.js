@@ -3,7 +3,7 @@ function ValidateForm(){
   var validFirstName = false;
   var validLastName = false;
   var validEmail = false;
-  var validSubject = false;
+  
   
 
   var letters = /^[A-Za-z]+$/;
@@ -38,19 +38,10 @@ function ValidateForm(){
     errorMessages += "<p> Email Not Valid</p>";
   else
     validEmail = true; 
-  
-  /*********** VALIDATES SUBJECT******** */
-  if (myContact.subject.value==null ||
-      myContact.subject.value=== "" ||
-      myContact.subject.value.length >=20 ||  !myContact.subject.value.match(letters))
-    errorMessages += "<p>The subject must be less than 20 characters and it is required. Only letters are accepted</p>";
-  else
-    validFirstName = true; 
-
 
 
   document.getElementById("errorMessages").innerHTML = errorMessages;
   // Make sure you return all the boolean variables that are checking each field
-  return (validFirstName && validLastName && validSubject) ;
+  return (validFirstName && validLastName && validEmail) ;
 }
 
