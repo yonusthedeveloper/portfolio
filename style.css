@@ -209,6 +209,7 @@ h1 {
   background-color: #5a3d83;
   opacity: .9;
   margin: 1%;
+  border-radius: 5px;
 }
 
 #m1, #m2, #m3, #m4, #m5, #m7, #m8, #m9, #m10 {
