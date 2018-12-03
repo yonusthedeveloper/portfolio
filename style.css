@@ -238,6 +238,16 @@ a {
   color: deeppink;
 }
 
+#timestyle {
+  background-color: #5a3d83;
+  margin: 1%;
+  opacity: .7;
+  border-radius: 5px;
+  font-size: 25px;
+  font-family: 'Carter One', cursive;
+  color: white;
+}
+
 .i1:hover {
   opacity: 0.5;
   filter: alpha(opacity=50); /* For IE8 and earlier */
